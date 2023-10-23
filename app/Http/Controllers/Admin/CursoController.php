@@ -13,7 +13,8 @@ class CursoController extends Controller
      */
     public function index()
     {
-        return "hello my friend";
+        $cursos = Curso::all();
+        return view("admin.curso.index");
     }
 
     /**
@@ -21,7 +22,7 @@ class CursoController extends Controller
      */
     public function create()
     {
-        //
+        return view("admin.curso.create");
     }
 
     /**
@@ -29,7 +30,7 @@ class CursoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return "cheguei no store";
     }
 
     /**
